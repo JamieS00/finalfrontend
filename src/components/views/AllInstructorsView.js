@@ -24,13 +24,19 @@ const AllInstructorsView = (props) => {
             <h1>{name}</h1>
           </Link>
           <p>{instructor.department}</p>
+          
         </div>
         );
 
       })}
+      <Link to={`/newinstructor`}>
+      <button>Add New Instructor</button>
+    </Link>
     </div>
   );
 };
+
+
 
 AllInstructorsView.propTypes = {
   allInstructors: PropTypes.array.isRequired,
