@@ -58,7 +58,7 @@ class NewInstructorContainer extends Component {
           return (<Redirect to={`/instructor/${this.state.redirectId}`}/>)
         }
         return (
-          <NewCourseView 
+          <NewInstructorView 
             handleChange = {this.handleChange} 
             handleSubmit={this.handleSubmit}      
           />
@@ -68,7 +68,7 @@ class NewInstructorContainer extends Component {
 
 const mapDispatch = (dispatch) => {
     return({
-        addInstructor: (course) => dispatch(addInstructorThunk(instructor)),
+        addInstructor: (instructor) => dispatch(addInstructorThunk(instructor)),
     })
 }
 
