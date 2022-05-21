@@ -4,7 +4,8 @@ import { connect } from 'react-redux';
 
 import { 
   fetchAllCoursesThunk,
-  deleteCourseThunk
+  deleteCourseThunk,
+  
 } from '../../store/thunks';
 
 import AllCoursesView from '../views/AllCoursesView';

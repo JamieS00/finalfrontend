@@ -4,6 +4,8 @@ import { connect } from "react-redux";
 import { fetchAllInstructorsThunk } from "../../store/thunks";
 import { AllInstructorsView } from "../views";
 
+
+
 class AllInstructorsContainer extends Component {
   componentDidMount() {
     console.log(this.props);
