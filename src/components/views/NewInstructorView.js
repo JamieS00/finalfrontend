@@ -13,12 +13,12 @@ const NewInstructorView = (props) => {
             </h2>
           </div>
           <form style={{textAlign: 'center'}} onSubmit={(e) => handleSubmit(e)}>
-            <label style= {{color:'#11153e', fontWeight: 'bold'}}>Title: </label>
+            <label style= {{color:'#11153e', fontWeight: 'bold'}}>Firstname: </label>
             <input type="text" name="Firstname" onChange ={(e) => handleChange(e)} />
             <br/>
             <br/>
   
-            <label style={{color:'#11153e', fontWeight: 'bold'}}>Timeslot: </label>
+            <label style={{color:'#11153e', fontWeight: 'bold'}}>Lastname: </label>
             <input type="text" name="Lastname" onChange={(e) => handleChange(e)} />
             <br/>
             <br/>
