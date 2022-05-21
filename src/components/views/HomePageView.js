@@ -9,6 +9,7 @@ const HomePageView = () => {
     <div>
       <h6>Final Project</h6>
       <Link to={'/instructors'} > All Instructors </Link>
+      <p> </p>
       <Link to={'/courses'} > All Courses </Link>
       
     </div>
