@@ -36,6 +36,14 @@ export const addCourse = (course) => {
   };
 };
 
+//---------------------------addInstructor----------------------------//
+export const addInstructor = (instructor) => {
+  return {
+    type: at.ADD_INSTRUCTOR,
+    payload: instructor,
+  };
+};
+//---------------------------addInstructor----------------------------//
 export const deleteCourse = (courseId) => {
   return {
     type: at.DELETE_COURSE,

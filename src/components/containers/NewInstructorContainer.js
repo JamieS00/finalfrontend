@@ -2,6 +2,7 @@ import { Component } from 'react';
 import { connect } from 'react-redux';
 import { Redirect } from 'react-router-dom';
 
+
 import NewInstructorView from '../views/NewInstructorView';
 import { addInstructorThunk } from '../../store/thunks';
 
