@@ -40,4 +40,4 @@ const NewInstructorView = (props) => {
     )
   }
   
-  export default NewCourseView;
+  export default NewInstructorView;

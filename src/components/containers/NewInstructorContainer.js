@@ -53,7 +53,7 @@ class NewInstructorContainer extends Component {
     }
 
     render() {
-      //go to single course view of newly created instructor
+      //go to single instructor view of newly created instructor
         if(this.state.redirect) {
           return (<Redirect to={`/instructor/${this.state.redirectId}`}/>)
         }
