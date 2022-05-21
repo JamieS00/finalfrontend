@@ -19,7 +19,7 @@ const NewInstructorView = (props) => {
             <br/>
   
             <label style={{color:'#11153e', fontWeight: 'bold'}}>Timeslot: </label>
-            <input type="text" name="lastname" onChange={(e) => handleChange(e)} />
+            <input type="text" name="Lastname" onChange={(e) => handleChange(e)} />
             <br/>
             <br/>
   

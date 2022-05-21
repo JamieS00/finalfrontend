@@ -2,11 +2,8 @@ import { Component } from 'react';
 import { connect } from 'react-redux';
 import { Redirect } from 'react-router-dom';
 
-
-//import NewCourseView from '../views/NewCourseView';
 import NewInstructorView from '../views/NewInstructorView';
-
-import { addCourseThunk } from '../../store/thunks';
+import { addInstructorThunk } from '../../store/thunks';
 
 
 class NewInstructorContainer extends Component {

@@ -54,6 +54,20 @@ export const addCourseThunk = (course) => async (dispatch) => {
   }
 };
 
+//----------------------addInstructorThunk-----------------------//
+export const addInstructorThunk = (instructor) => async (dispatch) => {
+  // course = { firstname: "Jayy" }
+  try {
+    let res = await axios.post(`${path}/instructors`, instructor);
+    dispatch(ac.addInstructor(res.data));
+    return res.data;
+  } catch(err) {
+    console.error(err);
+  }
+};
+//----------------------addInstructorThunk-----------------------//
+
+
 export const deleteCourseThunk = courseId => async dispatch => {
   try {
     await axios.delete(`${path}/courses/${courseId}`);
