@@ -4,6 +4,7 @@
 const NewInstructorView = (props) => {
     const {handleChange, handleSubmit } = props;
   
+    //FORM TO ADD NEW INSTRCUTOR 
     return (
       <div className="root">
         <div className="formContainer">
