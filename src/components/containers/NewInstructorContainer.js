@@ -5,7 +5,7 @@ import { Redirect } from 'react-router-dom';
 
 import NewInstructorView from '../views/NewInstructorView';
 import { addInstructorThunk } from '../../store/thunks';
-import { fetchAllInstructorsThunk } from "../../store/thunks";
+
 
 
 class NewInstructorContainer extends Component {
@@ -38,8 +38,8 @@ class NewInstructorContainer extends Component {
         };
         
         let newInstr = await this.props.addInstructor(instructor);
-        console.log(instructor);
-        console.log(this.props.fetchAllInstructors());
+        // console.log(instructor);
+        // console.log(this.props.fetchAllInstructors());
 
         this.setState({
           firstname: this.state.firstname,

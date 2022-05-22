@@ -44,12 +44,31 @@ export const addInstructor = (instructor) => {
   };
 };
 //---------------------------addInstructor----------------------------//
+
+
 export const deleteCourse = (courseId) => {
   return {
     type: at.DELETE_COURSE,
     payload: courseId,
   };
 };
+
+
+/*---------------------------deleteInstructor---------------------*/
+export const deleteInstructor = (instructorId) => {
+  return {
+    type: at.DELETE_INSTRUCTOR,
+    payload: instructorId,
+  };
+};
+/*---------------------------deleteInstructor---------------------*/
+
+
+
+
+
+
+
 
 
 export const editCourse = (course) => {

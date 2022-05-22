@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import { fetchAllInstructorsThunk } from "../../store/thunks";
 import { AllInstructorsView } from "../views";
-
+import {deleteCourseThunk} from '../../store/thunks';
 
 
 class AllInstructorsContainer extends Component {

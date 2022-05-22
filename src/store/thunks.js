@@ -43,6 +43,7 @@ export const fetchAllCoursesThunk = () => async (dispatch) => {
   }
 };
 
+
 export const addCourseThunk = (course) => async (dispatch) => {
   // course = { title: "CSCI 127" }
   try {
@@ -77,6 +78,18 @@ export const deleteCourseThunk = courseId => async dispatch => {
     console.error(err);
   }
 };
+
+//-------------------deleteInstructorThunk-----------------------//
+export const deleteInstructorThunk = instructorId => async dispatch => {
+  try {
+    await axios.delete(`${path}/instructors/${instructorId}`);
+    //delete succesful so change state with dispatch
+    dispatch(ac.deleteInstructor(instructorId));
+  } catch(err) {
+    console.error(err);
+  }
+};
+//-------------------deleteInstructorThunk-----------------------//
 
 export const editCourseThunk = course => async dispatch => {
   try {
