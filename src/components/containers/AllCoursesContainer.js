@@ -2,11 +2,7 @@ import { Component } from 'react';
 import { connect } from 'react-redux';
 
 
-import { 
-  fetchAllCoursesThunk,
-  deleteCourseThunk,
-  
-} from '../../store/thunks';
+import { fetchAllCoursesThunk,deleteCourseThunk,} from '../../store/thunks';
 
 import AllCoursesView from '../views/AllCoursesView';
 
