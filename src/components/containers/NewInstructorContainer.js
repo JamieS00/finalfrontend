@@ -34,7 +34,7 @@ class NewInstructorContainer extends Component {
             firstname: this.state.firstname,
             lastname: this.state.lastname,
             department: this.state.department,
-            instructorId: this.state.instructorId
+            //instructorId: this.state.instructorId
         };
         
         let newInstr = await this.props.addInstructor(instructor);

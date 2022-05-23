@@ -1,10 +1,6 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-import { 
-  fetchInstructorThunk,
-  fetchAllCoursesThunk,
-  editCourseThunk 
-} from "../../store/thunks";
+import { fetchInstructorThunk,fetchAllCoursesThunk,editCourseThunk } from "../../store/thunks";
 
 import { InstructorView } from "../views";
 
