@@ -1,7 +1,10 @@
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
+import { deleteInstructor } from "../../store/actions/actionCreators";
 
 const AllInstructorsView = (props) => {
+
+
   if (!props.allInstructors.length) {
     return (
     <div>
