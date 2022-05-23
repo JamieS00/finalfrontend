@@ -8,15 +8,19 @@ import {deleteInstructorThunk} from '../../store/thunks';
 
 class AllInstructorsContainer extends Component {
   componentDidMount() {
-    console.log(this.props);
+    //console.log(this.props);
     this.props.fetchAllInstructors();
   }
 
   render() {
     return (
+      <div>
       <AllInstructorsView
         allInstructors={this.props.allInstructors}
+        instructors = {this.props.allInstructors}//
+        deleteInstructor = {this.props.deleteInstructor}//
       />
+      </div>
     );
   }
 }

@@ -10,7 +10,7 @@ class AllCoursesContainer extends Component {
     componentDidMount() {
       this.props.fetchAllCourses();
     }
-    render(){
+render(){
         return(
             <div>
                 <AllCoursesView 

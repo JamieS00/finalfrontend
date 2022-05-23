@@ -24,8 +24,8 @@ const NewInstructorView = (props) => {
             <br/>
             <br/>
   
-            <label style={{color:'#11153e', fontWeight: 'bold'}}>instructorId: </label>
-            <input type="text" name="instructorId" onChange={(e) => handleChange(e)} />
+            <label style={{color:'#11153e', fontWeight: 'bold'}}>Department: </label>
+            <input type="text" name="department" onChange={(e) => handleChange(e)} />
             <br/>
             <br/>
   

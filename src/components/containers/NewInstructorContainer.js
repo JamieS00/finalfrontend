@@ -38,14 +38,13 @@ class NewInstructorContainer extends Component {
         };
         
         let newInstr = await this.props.addInstructor(instructor);
-        // console.log(instructor);
-        // console.log(this.props.fetchAllInstructors());
+        
 
         this.setState({
           firstname: this.state.firstname,
           lastname: this.state.lastname,
           department: this.state.department,
-          instructorId: null, 
+          //instructorId: null, 
           redirect: true, 
           redirectId: newInstr.id
         });
@@ -74,11 +73,6 @@ const mapDispatch = (dispatch) => {
         addInstructor: (instructor) => dispatch(addInstructorThunk(instructor)),
     })
 }
-// const mapDispatch = (dispatch) => {
-//   return({
-//       addInstructor: (instructor) => dispatch(addInstructorThunk(instructor)),
-//       fetchAllInstructors: () => dispatch(fetchAllInstructorsThunk()),
-//   })
-// }
+
 
 export default connect(null, mapDispatch)(NewInstructorContainer);
