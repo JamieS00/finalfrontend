@@ -4,6 +4,7 @@ import { deleteInstructor } from "../../store/actions/actionCreators";
 
 const AllInstructorsView = (props) => {
 
+  let {instructors, deleteInstructor} = props;//
 
   if (!props.allInstructors.length) {
     return (
@@ -27,8 +28,7 @@ const AllInstructorsView = (props) => {
             <h1>{name}</h1>
           </Link>
           <p>{instructor.department}</p>
-          <button onClick={() => deleteInstructor(instructor.id)}>Delete</button> 
-          
+          <button onClick={() => deleteInstructor(instructor.id)}>Delete</button>   
         </div>
         );
 
@@ -39,9 +39,6 @@ const AllInstructorsView = (props) => {
     </div>
   );
 };
-
-
-
 
 AllInstructorsView.propTypes = {
   allInstructors: PropTypes.array.isRequired,
